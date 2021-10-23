@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Red+Hat+Display:wght@300;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+body {
+    display: flex;
+    align-items: center;
+    background-color: hsl(233, 47%, 7%);
+    padding: 22vh 10vw 22vh 10vw;
+    margin: 0;
+    color: white;
+}
+
+.card {
+    display: flex;
+    width: 80vw;
+}
+
+.leftContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: hsl(244, 38%, 16%);
+    padding: 60px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.header {
+    font-family: "Inter";
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.desc {
+    font-family: "Lexend Deca";
+    font-size: 15px;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-right: 100px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.stats {
+    font-family: "Lexend Deca";
+    font-size: 15px;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.5);
+    padding-right: 100px;
+}
+
+.statHeader {
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+}
+
+.statItem {
+    display: flex;
+    flex-direction: column;
+}
+
+.rightContainer img{
+    -webkit-filter: brightness(50%) sepia(1) hue-rotate(234deg) saturate(250.5%) brightness(90.2%);
+}
+
+.rightContainer, .rightContainer img {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+#mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 450px) {
+    #desktop {
+        display: none;
+    }
+
+    .rightContainer {
+        background-color: hsl(244, 38%, 16%);
+    }
+
+    #mobile {
+        display: inline;
+        width: 100%;
+        min-height: 100%;
+    }
+
+    body {
+        padding: 30px 5vw 30px 5vw;
+    }
+
+    .card {
+        flex-direction: column-reverse;
+        width: 90vw;
+    }
+
+    .leftContainer {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .stats {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .desc {
+        padding: 0;
+    }
+
+    .headerAndDesc {
+        margin-bottom: 30px;
+    }
+
+    .rightContainer, .rightContainer img {
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 6px;
+    }
+
+    .leftContainer {
+        border-bottom-right-radius: 6px;
+        border-top-left-radius: 0;
+    }
+}
